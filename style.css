@@ -96,40 +96,45 @@ button {
 }
 
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
+  html, body {
+    height: 100%;
+    margin: 0;
     padding: 0;
   }
 
+  #intro-screen,
   #start-screen,
-  #game-screen,
   #result-screen {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
     padding: 10px;
+    box-sizing: border-box;
   }
 
   h1, h2, p, #intro-text {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
     text-align: center;
   }
 
   #timer {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 12px;
   }
 
   #grid-game {
-    width: 95vw;
-    height: 95vw;
-    gap: 1px;
-    margin: 0 auto;
+    width: 98vw;
+    height: 98vw;
+    gap: 2px;
+    grid-template-columns: repeat(10, 1fr);
   }
 
   .cell {
-    border: none;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
   }
 }
