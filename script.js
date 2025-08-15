@@ -79,7 +79,7 @@ window.addEventListener("DOMContentLoaded", () => {
       resultText = "Lucky day for the Earth! You couldn’t kill any pixels of our planet today. But don’t worry — plenty of champions are out there, producing more plastic waste for you.";
     } else if (score === 1) {
       resultText = `You killed only ${score} pixel of our planet. If you want to kill more, just use more plastic! More, more, more!`;
-    } else if (score < 15) {
+    } else if (score > 1 && score < 15) {
       resultText = `You killed only ${score} pixels of our planet. If you want to kill more, just use more plastic! More, more, more!`;
     } else if (score <= 30) {
       resultText = `You killed ${score} pixels of our planet. Not bad for 30 seconds — but imagine what a lifetime of plastic use can do.`;
