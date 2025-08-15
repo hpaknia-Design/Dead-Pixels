@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dead Pixels</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div id="intro-screen">
+      <img src="Images/Logo.png" alt="Dead Pixels Logo" id="logo">
+      <p id="intro-text">This is not a game, but you will play anyway.</p>
+      <button id="enter-btn" type="button">Enter</button>
+    </div>
+
+    <div id="start-screen" class="hidden">
+      <h2 id="game-instruction">Tap the pixels. Buy as many as you can in 30 seconds.</h2>
+      <button id="start-btn" type="button">Start</button>
+      <div id="timer">30</div>
+      <div id="grid-game"></div>
+    </div>
+
+    <div id="result-screen" class="hidden">
+      <p id="message"></p>
+      <img id="earthImage" src="Images/Earth.png" alt="Earth" />
+      <h2 class="not-a-game">Told You... This Is Not A Game!</h2>
+      <button id="try-again-btn" type="button">Try Again</button>
+    </div>
+
+    <div id="popup" class="hidden">
+      <div id="popup-content">
+        <p>
+          Better not!<br><br>
+          Some things you don’t want to repeat.<br>
+          Some actions can’t be undone.<br><br>
+          A single dead pixel might seem harmless, but pixel by pixel, the image of our world fades away. Every choice we make — every plastic bottle, every bag, every single straw, every plastic cup — erases a tiny fragment of our planet’s reality.<br><br> 
+          And when enough pixels are gone… there’s no image left to save.<br><br><br>
+          H.Paknia 
+        </p>
+        <button id="close-popup" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
