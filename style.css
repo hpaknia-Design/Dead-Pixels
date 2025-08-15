@@ -123,10 +123,6 @@ button {
     padding: 0;
   }
 
-  .hidden {
-    display: none;
-  }
-
   #intro-screen:not(.hidden),
   #start-screen:not(.hidden),
   #result-screen:not(.hidden) {
@@ -140,18 +136,18 @@ button {
   }
 
   h1, h2, p, #intro-text {
-    font-size: clamp(1.3rem, 4.5vw, 1.8rem);
+    font-size: clamp(1.3rem, 5vw, 2rem);
     line-height: 1.5;
     text-align: center;
   }
 
   button {
-    font-size: clamp(1rem, 4vw, 1.4rem);
+    font-size: clamp(1.1rem, 4.5vw, 1.6rem);
     padding: 12px 24px;
   }
 
   #timer {
-    font-size: clamp(1.6rem, 5vw, 2.4rem);
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
     margin-bottom: 12px;
   }
 
@@ -160,11 +156,5 @@ button {
     height: 95vw;
     gap: 2px;
     grid-template-columns: repeat(10, 1fr);
-  }
-
-  .cell {
-    aspect-ratio: 1 / 1;
-    background-size: cover;
-    background-position: center;
   }
 }
