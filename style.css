@@ -99,10 +99,6 @@ button {
   body {
     font-size: 16px;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   #start-screen,
@@ -116,7 +112,7 @@ button {
     padding: 10px;
   }
 
-  h1, h2, p {
+  h1, h2, p, #intro-text {
     font-size: 1.1rem;
     text-align: center;
   }
@@ -130,10 +126,10 @@ button {
     width: 95vw;
     height: 95vw;
     gap: 1px;
+    margin: 0 auto;
   }
 
   .cell {
     border: none;
   }
 }
-
