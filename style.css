@@ -1,34 +1,56 @@
 * { box-sizing: border-box; }
-html, body { height: 100%; margin: 0; background: #111; color: #fff; font-family: monospace; text-align: center; }
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  background: #111; 
+  color: #fff; 
+  font-family: monospace; 
+  text-align: center; 
+}
 
 h1, h2, p { margin: 8px 0; }
+
 button {
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 12px 24px;
+  font-size: 1.1rem;
   font-family: monospace;
   cursor: pointer;
   margin: 8px 0 16px;
 }
 
+#intro-screen,
+#start-screen,
+#result-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 #logo {
   max-width: 320px;
   width: 60vw;
-  margin-top: 50px;
+  margin-bottom: 30px;
 }
+
 #intro-text {
   margin: 24px auto;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 #game-instruction {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin: 20px auto 10px;
   max-width: 600px;
 }
+
 #timer {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 8px 0 12px;
 }
+
 #grid-game {
   display: grid;
   grid-template-columns: repeat(15, 1fr);
@@ -38,6 +60,7 @@ button {
   gap: 2px;
   margin: 0 auto 24px;
 }
+
 .cell {
   aspect-ratio: 1 / 1;
   background-size: cover;
@@ -48,9 +71,8 @@ button {
   cursor: pointer;
   transition: filter 0.15s ease;
 }
-.cell.clicked {
-  filter: brightness(1);
-}
+
+.cell.clicked { filter: brightness(1); }
 
 #earthImage {
   max-width: 480px;
@@ -59,6 +81,7 @@ button {
   margin: 16px auto;
   display: block;
 }
+
 #message {
   max-width: 720px;
   margin: 12px auto 24px;
@@ -67,8 +90,9 @@ button {
   color: #ff4444;
   font-weight: bold;
 }
+
 .not-a-game {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: 12px;
   color: #fff;
 }
@@ -81,9 +105,7 @@ button {
   align-items: center; justify-content: center;
   z-index: 100;
 }
-#popup:not(.hidden) {  
-  display: flex;
-}
+#popup:not(.hidden) { display: flex; }
 
 #popup-content {
   background: #222;
@@ -93,48 +115,23 @@ button {
   text-align: left;
 }
 .hidden { display: none; }
-}
 
 @media (max-width: 768px) {
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  #intro-screen,
-  #start-screen,
-  #result-screen {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  h1, h2, p, #intro-text {
-    font-size: 1.3rem;
-    line-height: 1.5;
-    text-align: center;
-  }
-
-  #timer {
-    font-size: 2rem;
-    margin-bottom: 12px;
+  #intro-text,
+  #game-instruction,
+  #message {
+    font-size: 1.2rem;
   }
 
   #grid-game {
-    width: 98vw;
-    height: 98vw;
+    width: 96vw;
+    height: 96vw;
     gap: 2px;
     grid-template-columns: repeat(10, 1fr);
   }
 
-  .cell {
-    aspect-ratio: 1 / 1;
-    background-size: cover;
-    background-position: center;
+  button {
+    font-size: 1.2rem;
+    padding: 14px 28px;
   }
 }
