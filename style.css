@@ -123,6 +123,10 @@ button {
     padding: 0;
   }
 
+  .hidden {
+    display: none;
+  }
+
   #intro-screen:not(.hidden),
   #start-screen:not(.hidden),
   #result-screen:not(.hidden) {
@@ -135,23 +139,19 @@ button {
     box-sizing: border-box;
   }
 
-  .hidden {
-    display: none !important;
-  }
-
   h1, h2, p, #intro-text {
-    font-size: clamp(1.2rem, 4vw, 1.6rem);
+    font-size: clamp(1.3rem, 4.5vw, 1.8rem);
     line-height: 1.5;
     text-align: center;
   }
 
   button {
-    font-size: clamp(1rem, 3.5vw, 1.3rem);
+    font-size: clamp(1rem, 4vw, 1.4rem);
     padding: 12px 24px;
   }
 
   #timer {
-    font-size: clamp(1.5rem, 5vw, 2.2rem);
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
     margin-bottom: 12px;
   }
 
