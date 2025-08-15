@@ -117,44 +117,40 @@ button {
 .hidden { display: none; }
 
 @media (max-width: 768px) {
-  html, body {
-    height: 100%;
-    margin: 0;
+  body {
+    font-size: 16px;
     padding: 0;
   }
 
-  #intro-screen:not(.hidden),
-  #start-screen:not(.hidden),
-  #result-screen:not(.hidden) {
-    min-height: 100vh;
-    display: flex;
+  #start-screen,
+  #game-screen,
+  #result-screen {
+    display: flex !important;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
     padding: 10px;
-    box-sizing: border-box;
   }
 
   h1, h2, p, #intro-text {
-    font-size: clamp(1.3rem, 5vw, 2rem);
-    line-height: 1.5;
+    font-size: 1.1rem !important;
     text-align: center;
   }
 
-  button {
-    font-size: clamp(1.1rem, 4.5vw, 1.6rem);
-    padding: 12px 24px;
-  }
-
   #timer {
-    font-size: clamp(1.8rem, 6vw, 2.4rem);
-    margin-bottom: 12px;
+    font-size: 1.8rem !important;
+    margin-bottom: 10px;
   }
 
   #grid-game {
-    width: 95vw;
-    height: 95vw;
-    gap: 2px;
-    grid-template-columns: repeat(10, 1fr);
+    width: 95vw !important;
+    height: 95vw !important;
+    gap: 1px !important;
+    margin: 0 auto;
+  }
+
+  .cell {
+    border: none !important;
   }
 }
